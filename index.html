@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <div id="room-creation" class="mb-4">
+            <button id="create-room" class="btn btn-primary mb-2">Create Room</button>
+            <div class="input-group mb-3">
+                <input type="text" id="room-code" class="form-control" placeholder="Enter Room Code">
+                <div class="input-group-append">
+                    <button id="join-room" class="btn btn-secondary">Join Room</button>
+                </div>
+            </div>
+        </div>
+        <div id="game" class="d-none">
+            <div class="room-code">Room Code: {code}</div>
+            <div id="board" class="d-flex flex-wrap">
+                <div class="row">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                  </div>
+                  <div class="row">
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                  </div>
+                  <div class="row">
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                  </div>
+            </div>
+            <div id="status" class="mt-3"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
