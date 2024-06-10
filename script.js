@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   const connectWebSocket = (roomCode) => {
-    ws = new WebSocket(`ws://chat-xgyd.onrender.com/ws/${roomCode}`);
+    ws = new WebSocket(`wss://chat-xgyd.onrender.com/ws/${roomCode}`);
     ws.onopen = () => {
       console.log('Connected to room:', roomCode);
     };
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   createRoomButton.addEventListener('click', () => {
-    fetch('http://chat-xgyd.onrender.com/create_room', {
+    fetch('https://chat-xgyd.onrender.com/create_room', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
